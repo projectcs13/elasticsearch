@@ -19,7 +19,7 @@
 		
 			"description" : {
 				"type" : "string",
-				"index" : "not"
+				"index" : "no"
 			},
 	
 			"tags" : {
