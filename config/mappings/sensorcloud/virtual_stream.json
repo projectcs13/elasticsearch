@@ -38,7 +38,7 @@
 			},
 	
 			"history_size" : {
-				"type" : "int",
+				"type" : "long",
 				"index" : "not_analyzed"
 			},
 	
