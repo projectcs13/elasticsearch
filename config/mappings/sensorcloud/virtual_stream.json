@@ -53,7 +53,7 @@
 			},
 	
 			"function" : {
-				"type" : "attachment",
+				"type" : "string",
 				"index" : "no"
 			}
 		}
