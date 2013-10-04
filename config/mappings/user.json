@@ -1,0 +1,11 @@
+{
+	"user" : {
+		"_timestamp" : { "enabled" : true, "store" : true},
+		"properties" : {
+			"username" : { 
+				"type" : "string",
+				"index" : "not_analyzed"
+			}
+		}
+	}
+}
