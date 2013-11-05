@@ -1,0 +1,18 @@
+{
+	"datapoint" : {
+		"_source" : { "enabled" : true },
+		"properties" : {
+			"streamid":{
+				"type":"string", 
+				"index":"not_analyzed"
+			},
+			"timestamp":{
+				"type":"string"
+			},
+			"value":{
+				"type":"double", 
+				"index":"no"
+			}
+		}
+	}
+}
