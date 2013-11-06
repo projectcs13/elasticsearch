@@ -11,7 +11,7 @@
 			},
 			"value":{
 				"type":"double", 
-				"index":"no"
+				"index":"not_analyzed"
 			}
 		}
 	}
