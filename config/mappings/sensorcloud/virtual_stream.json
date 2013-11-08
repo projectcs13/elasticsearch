@@ -6,12 +6,11 @@
 		},
 		
 		"_timestamp" : {
-			"enabled" : true,
-			"format" : "basic_date_time" 
+			"enabled" : true
 		},
 		
 		"properties" : {
-		
+			
 			"name": {
 				"type" : "string",
 				"index" : "analyzed"
