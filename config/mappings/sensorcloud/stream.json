@@ -45,7 +45,6 @@
 				"index" : "no",
 				"store" : "no"
 			},
-			
 			"quality" : {
 				"type" : "float",
 				"index" : "not_analyzed"
