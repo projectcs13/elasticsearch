@@ -4,7 +4,7 @@
 			"enabled" : true
 		},
 		"_timestamp" : {
-			"enabled" : true,
+			"enabled" : true
 		},
 		"properties" : {
 			"resource_id" : {
