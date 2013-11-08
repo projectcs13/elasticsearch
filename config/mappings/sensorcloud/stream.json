@@ -4,8 +4,7 @@
 			"enabled" : true
 		},
 		"_timestamp" : {
-			"enabled" : true,
-			"format" : "basic_date_time" 
+			"enabled" : true
 		},
 		"properties" : {
 			"resource_id" : {
@@ -66,7 +65,6 @@
 			},
 			"last_updated" : {
 				"type" : "date",
-				"format" : "basic_date_time",
 				"index" : "not_analyzed"
 			},
 			"creation_date" : {
