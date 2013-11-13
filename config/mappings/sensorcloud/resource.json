@@ -45,7 +45,23 @@
 			"creation_date" : { 
 				"type" : "date",
 				"index" : "no"
+			},
+			"manufacturer_suggest" : { "type" : "completion",
+				"index_analyzer"  : "simple",      
+				"search_analyzer" : "simple",
+				"payloads" : false
+			},
+			"model_suggest" : { "type" : "completion",
+				"index_analyzer"  : "simple",      
+				"search_analyzer" : "simple",
+				"payloads" : false
+			},
+			"tags_suggest" : { "type" : "completion",
+				"index_analyzer"  : "simple",      
+				"search_analyzer" : "simple",
+				"payloads" : false
 			}
+
 
 		}
 	}

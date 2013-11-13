@@ -77,7 +77,23 @@
 			"location" : {
 				"type" : "geo_point",
 				"lat_lon" : true
+			},
+			"tags_suggest" : { "type" : "completion",
+				"index_analyzer"  : "simple",      
+				"search_analyzer" : "simple",
+				"payloads" : false
+			},
+			"name_suggest" : { "type" : "completion",
+				"index_analyzer"  : "simple",      
+				"search_analyzer" : "simple",
+				"payloads" : false
+			},
+			"type_suggest" : { "type" : "completion",
+				"index_analyzer"  : "simple",      
+				"search_analyzer" : "simple",
+				"payloads" : false
 			}
+
 		}
 	}
 }
