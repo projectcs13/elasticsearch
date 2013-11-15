@@ -1,7 +1,7 @@
 {
    "search_query": {
       "properties": {
-         "suggest": {
+         "search_suggest": {
             "type": "completion",
             "analyzer": "keyword",
             "payloads": false,
