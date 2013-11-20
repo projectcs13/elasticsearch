@@ -5,6 +5,10 @@
 			"username" : { 
 				"type" : "string",
 				"index" : "not_analyzed"
+			},
+			"private" : { 
+				"type" : "boolean",
+				"index" : "yes"
 			}
 		}
 	}
