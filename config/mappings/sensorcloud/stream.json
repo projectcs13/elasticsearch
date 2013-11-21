@@ -55,7 +55,7 @@
 				"index" : "not_analyzed",
 				"store" : "no"
 			},
-			"poll" : {
+			"polling" : {
 				"type" : "boolean",
 				"index" : "not_analyzed"
 			},
