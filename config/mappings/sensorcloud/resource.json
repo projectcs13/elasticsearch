@@ -1,22 +1,23 @@
 {
 	"resource" : {
 		"_timestamp" : { "enabled" : true, "store" : true},
+		"dynamic": "strict",
 		"properties" : {
 			"tags" : { 
 				"type" : "string",
-				"index" : "no"
+				"index" : "not_analyzed"
 			},
 			"description" : { 
 				"type" : "string",
-				"index" : "no"
+				"index" : "not_analyzed"
 			},
 			"manufacturer" : { 
 				"type" : "string",
-				"index" : "no"
+				"index" : "not_analyzed"
 			},
 			"model" : { 
 				"type" : "string",
-				"index" : "no"
+				"index" : "not_analyzed"
 			},
 			"manufacturer_suggest" : { "type" : "completion",
 				"index_analyzer"  : "simple",      
