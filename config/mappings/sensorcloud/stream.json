@@ -6,6 +6,7 @@
 		"_timestamp" : {
 			"enabled" : true
 		},
+		"dynamic": "strict",
 		"properties" : {
 			"name" : {
 				"type" : "multi_field",
@@ -53,8 +54,16 @@
 				"index" : "not_analyzed"
 			},
 			"user_ranking" : {
-				"type" : "double",
-				"index" : "not_analyzed"
+				"properties":{
+					"average":{
+						"type" : "float",
+						"index" : "yes"
+					},
+					"nr_rankings":{
+						"type": "long",
+						"index": "no"
+					}
+				}
 			},
 			"subscribers" : {
 				"type" : "long",
