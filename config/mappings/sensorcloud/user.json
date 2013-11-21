@@ -5,7 +5,13 @@
 			"username" : { 
 				"type" : "string",
 				"index" : "not_analyzed"
-			}
+			},
+			"rankings" : {
+                		"properties" : {
+                    			"stream_id" : {"type" : "string"},
+                    			"rank" : {"type" : "float"}
+                		}
+            		}
 		}
 	}
 }
