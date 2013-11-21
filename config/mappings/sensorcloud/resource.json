@@ -3,7 +3,7 @@
 		"_timestamp" : { "enabled" : true, "store" : true},
 		"dynamic": "strict",
 		"properties" : {
-			"tags" : { 
+			"name" : { 
 				"type" : "string",
 				"index" : "not_analyzed"
 			},
@@ -19,23 +19,10 @@
 				"type" : "string",
 				"index" : "not_analyzed"
 			},
-			"manufacturer_suggest" : { "type" : "completion",
-				"index_analyzer"  : "simple",      
-				"search_analyzer" : "simple",
-				"payloads" : false
-			},
-			"model_suggest" : { "type" : "completion",
-				"index_analyzer"  : "simple",      
-				"search_analyzer" : "simple",
-				"payloads" : false
-			},
-			"tags_suggest" : { "type" : "completion",
-				"index_analyzer"  : "simple",      
-				"search_analyzer" : "simple",
-				"payloads" : false
+			"streams_suggest" : { 
+				"type" : "string",
+				"index" : "no"
 			}
-
-
 		}
 	}
 }

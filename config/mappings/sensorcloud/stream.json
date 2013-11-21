@@ -11,17 +11,27 @@
 			"name" : {
 				"type" : "multi_field",
 				"fields" : {
-					"name" : {"type" : "string", "index" : "analyzed"},
-					"untouched" : {"type" : "string", "index" : "not_analyzed"}
+					"name" : {
+						"type" : "string",
+						"index" : "analyzed"
+					},
+					"untouched" : {
+						"type" : "string",
+						"index" : "not_analyzed"
+					}
 				}
-			},
-			"tags" : {
-				"type" : "string",
-				"index" : "analyzed"
 			},
 			"description" : {
 				"type" : "string",
 				"index" : "no"
+			},
+			"type" : {
+				"type" : "string",
+				"index" : "not_analyzed"
+			},
+			"tags" : {
+				"type" : "string",
+				"index" : "analyzed"
 			},
 			"private" : {
 				"type" : "boolean",
@@ -33,18 +43,51 @@
 			},
 			"accuracy" : {
 				"type" : "float",
-				"index" : "no"
+				"index" : "not_analyzed"
 			},
 			"min_val" : {
 				"type" : "float",
-				"index" : "no",
+				"index" : "not_analyzed",
 				"store" : "no"
 			},
 			"max_val" : {
 				"type" : "float",
-				"index" : "no",
+				"index" : "not_analyzed",
 				"store" : "no"
 			},
+			"poll" : {
+				"type" : "boolean",
+				"index" : "not_analyzed"
+			},
+			"uri" : {
+				"type" : "string",
+				"index" : "no"
+			},
+			"polling_freq" : {
+				"type" : "long",
+				"index" : "not_analyzed"
+			},
+			"location" : {
+				"type" : "geo_point",
+				"lat_lon" : true,
+				"geohash" : true,
+				"geohash_prefix" : true,
+				"normalize" : false,
+				"validate" : true
+			},
+			"resource" : {
+				"properties" : {
+					"resource_type" : {
+						"type" : "string",
+						"index" : "not_analyzed"
+					},
+					"uuid" : {
+						"type" : "string",
+						"index" : "no"
+					}
+				}
+			},
+
 			"quality" : {
 				"type" : "float",
 				"index" : "not_analyzed"
@@ -68,7 +111,7 @@
 			"subscribers" : {
 				"type" : "long",
 				"index" : "no",
-				"store" : "no"
+				"store" : "not_analyzed"
 			},
 			"last_updated" : {
 				"type" : "date",
@@ -76,57 +119,16 @@
 			},
 			"creation_date" : {
 				"type" : "date",
-				"index" : "no"
+				"index" : "not_analyzed"
 			},
 			"history_size" : {
 				"type" : "long",
-				"index" : "no"
+				"index" : "not_analyzed"
 			},
-			"location" : {
-				"type" : "geo_point",
-				"lat_lon" : true
-			},	
 			"user_id" : {
 				"type" : "string",
 				"index" : "not_analyzed"
-			},
-			
-			"uri" : {
-				"type" : "string",
-				"index" : "no"
-			},
-			"polling_freq" : {
-				"type" : "long",
-				"index" : "no"
-			},
-			"resource" : {
-				"properties" : {
-					"resource_type" : {
-						"type" : "string",
-						"index" : "not_analyzed"
-					},
-					"uuid" : {
-						"type" : "string",
-						"index" : "no"
-					}
-				}
-			},
-			"tags_suggest" : { "type" : "completion",
-				"index_analyzer"  : "simple",      
-				"search_analyzer" : "simple",
-				"payloads" : false
-			},
-			"name_suggest" : { "type" : "completion",
-				"index_analyzer"  : "simple",      
-				"search_analyzer" : "simple",
-				"payloads" : false
-			},
-			"type_suggest" : { "type" : "completion",
-				"index_analyzer"  : "simple",      
-				"search_analyzer" : "simple",
-				"payloads" : false
 			}
-
 		}
 	}
 }
