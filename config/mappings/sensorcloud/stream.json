@@ -99,8 +99,7 @@
 			"user_ranking" : {
 				"properties":{
 					"average":{
-						"type" : "float",
-						"index" : "analyzed"
+						"type" : "float"
 					},
 					"nr_rankings":{
 						"type": "long",
