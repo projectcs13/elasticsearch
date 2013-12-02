@@ -59,6 +59,14 @@
 				"type" : "boolean",
 				"index" : "not_analyzed"
 			},
+			"parser" : {
+				"type" : "string",
+				"index" : "no"
+			},
+			"data_type" : {
+				"type" : "string",
+				"index" : "no"
+			},
 			"uri" : {
 				"type" : "string",
 				"index" : "no"
