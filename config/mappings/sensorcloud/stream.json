@@ -6,7 +6,7 @@
 		"_timestamp" : {
 			"enabled" : true
 		},
-		"dynamic": "strict",
+		"dynamic": false,
 		"properties" : {
 			"name" : {
 				"type" : "multi_field",
