@@ -1,6 +1,7 @@
 {
         "vsdatapoint" : {
                 "_source" : { "enabled" : true },
+                "dynamic": false,
                 "properties" : {
                         "stream_id":{
                                 "type":"string",
