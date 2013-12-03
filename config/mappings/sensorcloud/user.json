@@ -11,7 +11,24 @@
                     			"stream_id" : {"type" : "string"},
                     			"rank" : {"type" : "float"}
                 		}
-            		}
+            		},
+			"email" : {
+				"type" : "string",
+				"index" : "not_analyzed"
+			},
+		       	"password" : {
+				"type" : "string",
+				"index" : "not_analyzed"
+			},
+		       	"firstname" : {
+				"type" : "string"
+			},
+		       	"lastname" : {
+				"type" : "string"
+			},
+			"description" : {
+				"type" : "string"
+			},
 		}
 	}
 }
