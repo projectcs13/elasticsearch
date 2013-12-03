@@ -28,7 +28,7 @@
 			},
 			"description" : {
 				"type" : "string"
-			},
+			}
 		}
 	}
 }
