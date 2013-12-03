@@ -2,6 +2,7 @@
 	"group" : {
 		"_source" : { "enabled" : true },
 		"_timestamp" : {"enabled" : true, "store" : true},
+		"dynamic": false,
 		"properties" : {
 			"owner":{
 				"type":"string", 
