@@ -115,10 +115,19 @@
 					}
 				}
 			},
-			"subscribers" : {
+			"nr_subscribers" : {
 				"type" : "long",
 				"index" : "no",
 				"store" : "not_analyzed"
+			},
+			"subscribers" : {
+				"properties" : {
+					"user_id" : {
+						"type" : "string",
+						"index" : "no",
+						"store" : "not_analyzed"
+					}
+				}
 			},
 			"last_updated" : {
 				"type" : "date",
