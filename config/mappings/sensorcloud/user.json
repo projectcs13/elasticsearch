@@ -17,6 +17,7 @@
                     			"function" : {"type" : "string"},
                     			"input" : {"type" : "float"},
 					"streams" : {"type" : "string"}
+				}
                 	},
                 	"notifications" : {
 				"type" : "object"
