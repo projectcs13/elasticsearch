@@ -18,6 +18,9 @@
                     			"input" : {"type" : "float"},
 					"streams" : {"type" : "string"}
                 	},
+                	"notifications" : {
+				"type" : "object"
+                	},
 			"email" : {
 				"type" : "string",
 				"index" : "no"
