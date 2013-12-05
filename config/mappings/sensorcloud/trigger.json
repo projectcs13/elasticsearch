@@ -13,6 +13,7 @@
 							"output_id" : {"type" : "string"},
 							"output_type" : {"type" : "string"}
 							}
+                    			}
                 		}
             		},
 			"streams" : {
