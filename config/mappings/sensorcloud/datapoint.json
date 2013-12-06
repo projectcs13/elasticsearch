@@ -13,7 +13,7 @@
 			},
 			"value":{
 				"type":"double", 
-				"index":"yes"
+				"index":"analyzed"
 			}
 		}
 	}
