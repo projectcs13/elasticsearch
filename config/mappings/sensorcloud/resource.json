@@ -21,34 +21,13 @@
 			},
 			"streams_suggest" : { 
 				"properties" : {
-					"resource" : {
-						"properties" : {
-							"resource_type" : {
-								"type" : "string",
-								"index" : "not_analyzed"
-							},
-							"uuid" : {
-								"type" : "string",
-								"index" : "no"
-							}
-						}
-					},	
-
 					"name" : {
 						"type" : "string",
 						"index" : "not_analyzed"
 					},
 					"accuracy" : {
 						"type" : "float",
-						"index" : "not_analyzed"
-					},
-					"location" : {
-						"type" : "geo_point",
-						"lat_lon" : true,
-						"geohash" : true,
-						"geohash_prefix" : true,
-						"normalize" : false,
-						"validate" : true
+						"index" : "yes"
 					},
 					"description" : {
 						"type" : "string",
@@ -56,21 +35,21 @@
 					},
 					"min_val" : {
 						"type" : "float",
-						"index" : "not_analyzed",
+						"index" : "yes",
 						"store" : "no"
 					},
 					"max_val" : {
 						"type" : "float",
-						"index" : "not_analyzed",
+						"index" : "yes",
 						"store" : "no"
 					},
 					"polling" : {
 						"type" : "boolean",
-						"index" : "not_analyzed"
+						"index" : "yes"
 					},
 					"polling_freq" : {
 						"type" : "long",
-						"index" : "not_analyzed"
+						"index" : "yes"
 					},
 					"type" : {
 						"type" : "string",
