@@ -34,30 +34,23 @@
 				"index" : "analyzed"
 			},
 			"private" : {
-				"type" : "boolean",
-				"index" : "yes"
+				"type" : "boolean"
 			},
 			"unit" : {
 				"type" : "string",
 				"index" : "not_analyzed"
 			},
 			"accuracy" : {
-				"type" : "float",
-				"index" : "yes"
+				"type" : "float"
 			},
 			"min_val" : {
-				"type" : "float",
-				"index" : "yes",
-				"store" : "no"
+				"type" : "float"
 			},
 			"max_val" : {
-				"type" : "float",
-				"index" : "yes",
-				"store" : "no"
+				"type" : "float"
 			},
 			"polling" : {
-				"type" : "boolean",
-				"index" : "yes"
+				"type" : "boolean"
 			},
 			"parser" : {
 				"type" : "string",
@@ -96,48 +89,39 @@
 				}
 			},
 			"quality" : {
-				"type" : "float",
-				"index" : "yes"
+				"type" : "float"
 			},
 			"active" : {
-				"type" : "boolean",
-				"index" : "yes"
+				"type" : "boolean"
 			},
 			"user_ranking" : {
 				"properties":{
 					"average":{
-						"type" : "float",
-						"index": "yes"
+						"type" : "float"
 					},
 					"nr_rankings":{
-						"type": "long",
-						"index": "yes"
+						"type": "long"
 					}
 				}
 			},
 			"nr_subscribers" : {
-				"type" : "long",
-				"index" : "yes"
+				"type" : "long"
 			},
 			"subscribers" : {
 				"properties" : {
 					"user_id" : {
-						"type" : "string",
-						"index" : "yes"
+						"type" : "string"
 					}
 				}
 			},
 			"last_updated" : {
-				"type" : "date",
-				"index" : "yes"
+				"type" : "date"
 			},
 			"creation_date" : {
-				"type" : "date",
-				"index" : "yes"
+				"type" : "date"
 			},
 			"history_size" : {
-				"type" : "long",
-				"index" : "yes"
+				"type" : "long"
 			},
 			"user_id" : {
 				"type" : "string",
