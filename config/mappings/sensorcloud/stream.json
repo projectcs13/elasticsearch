@@ -35,7 +35,7 @@
 			},
 			"private" : {
 				"type" : "boolean",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"unit" : {
 				"type" : "string",
@@ -43,21 +43,21 @@
 			},
 			"accuracy" : {
 				"type" : "float",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"min_val" : {
 				"type" : "float",
-				"index" : "not_analyzed",
+				"index" : "yes",
 				"store" : "no"
 			},
 			"max_val" : {
 				"type" : "float",
-				"index" : "not_analyzed",
+				"index" : "yes",
 				"store" : "no"
 			},
 			"polling" : {
 				"type" : "boolean",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"parser" : {
 				"type" : "string",
@@ -73,7 +73,7 @@
 			},
 			"polling_freq" : {
 				"type" : "long",
-				"index" : "not_analyzed"
+				"index" : "no"
 			},
 			"location" : {
 				"type" : "geo_point",
@@ -95,51 +95,49 @@
 					}
 				}
 			},
-
 			"quality" : {
 				"type" : "float",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"active" : {
 				"type" : "boolean",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"user_ranking" : {
 				"properties":{
 					"average":{
-						"type" : "float"
+						"type" : "float",
+						"index": "yes"
 					},
 					"nr_rankings":{
 						"type": "long",
-						"index": "no"
+						"index": "yes"
 					}
 				}
 			},
 			"nr_subscribers" : {
 				"type" : "long",
-				"index" : "no",
-				"store" : "not_analyzed"
+				"index" : "yes"
 			},
 			"subscribers" : {
 				"properties" : {
 					"user_id" : {
 						"type" : "string",
-						"index" : "no",
-						"store" : "not_analyzed"
+						"index" : "yes"
 					}
 				}
 			},
 			"last_updated" : {
 				"type" : "date",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"creation_date" : {
 				"type" : "date",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"history_size" : {
 				"type" : "long",
-				"index" : "not_analyzed"
+				"index" : "yes"
 			},
 			"user_id" : {
 				"type" : "string",
