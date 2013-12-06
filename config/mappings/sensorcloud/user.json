@@ -43,8 +43,8 @@
 				"properties" : {
 					"stream_id" : {
 						"type" : "string",
-						"index" : "no",
-						"store" : "not_analyzed"
+						"index" : "not_analyzed",
+						"store" : "no"
 					}
 				}
 			}
