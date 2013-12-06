@@ -26,30 +26,23 @@
 						"index" : "not_analyzed"
 					},
 					"accuracy" : {
-						"type" : "float",
-						"index" : "yes"
+						"type" : "float"
 					},
 					"description" : {
 						"type" : "string",
 						"index" : "no"
 					},
 					"min_val" : {
-						"type" : "float",
-						"index" : "yes",
-						"store" : "no"
+						"type" : "float"
 					},
 					"max_val" : {
-						"type" : "float",
-						"index" : "yes",
-						"store" : "no"
+						"type" : "float"
 					},
 					"polling" : {
-						"type" : "boolean",
-						"index" : "yes"
+						"type" : "boolean"
 					},
 					"polling_freq" : {
-						"type" : "long",
-						"index" : "yes"
+						"type" : "long"
 					},
 					"type" : {
 						"type" : "string",
