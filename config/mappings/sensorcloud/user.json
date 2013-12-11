@@ -49,6 +49,9 @@
 						"store" : "no"
 					}
 				}
+			},
+			"private" : {
+				"type":"boolean"
 			}
 		}
 	}
