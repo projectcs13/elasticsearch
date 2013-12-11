@@ -1,6 +1,7 @@
 {
 	"user" : {
 		"_timestamp" : { "enabled" : true, "store" : true},
+		"_source" : {"excludes" : ["password"]},
 		"properties" : {
 			"username" : { 
 				"type" : "string",
@@ -28,7 +29,8 @@
 			},
 		       	"password" : {
 				"type" : "string",
-				"index" : "no"
+				"index" : "no",
+				"store" : "yes"
 			},
 		       	"firstname" : {
 				"type" : "string"
