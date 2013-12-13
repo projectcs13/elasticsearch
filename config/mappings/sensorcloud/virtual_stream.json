@@ -41,7 +41,26 @@
 				"type" : "boolean",
 				"index" : "not_analyzed"
 			},
-	
+			"user_ranking" : {
+                                "properties":{
+                                        "average":{
+                                                "type" : "float"
+                                        },
+                                        "nr_rankings":{
+                                                "type": "long"
+                                        }
+                                }
+                        },
+                        "nr_subscribers" : {
+                                "type" : "long"
+                        },
+                        "subscribers" : {
+                                "properties" : {
+                                        "user_id" : {
+                                                "type" : "string"
+                                        }
+                                }
+                        },
 			"history_size" : {
 				"type" : "long",
 				"index" : "not_analyzed"
