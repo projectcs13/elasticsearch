@@ -54,19 +54,18 @@
 			},
 			"parser" : {
 				"type" : "string",
-				"index" : "no"
+				"index" : "no_analyzed"
 			},
 			"data_type" : {
 				"type" : "string",
-				"index" : "no"
+				"index" : "no_analyzed"
 			},
 			"uri" : {
 				"type" : "string",
-				"index" : "no"
+				"index" : "no_analyzed"
 			},
 			"polling_freq" : {
-				"type" : "long",
-				"index" : "no"
+				"type" : "long"
 			},
 			"location" : {
 				"type" : "geo_point",
