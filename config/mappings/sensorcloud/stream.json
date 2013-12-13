@@ -65,8 +65,7 @@
 				"index" : "no_analyzed"
 			},
 			"polling_freq" : {
-				"type" : "long",
-				"index" : "no_analyzed"
+				"type" : "long"
 			},
 			"location" : {
 				"type" : "geo_point",
