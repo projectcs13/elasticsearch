@@ -54,15 +54,15 @@
 			},
 			"parser" : {
 				"type" : "string",
-				"index" : "no_analyzed"
+				"index" : "not_analyzed"
 			},
 			"data_type" : {
 				"type" : "string",
-				"index" : "no_analyzed"
+				"index" : "not_analyzed"
 			},
 			"uri" : {
 				"type" : "string",
-				"index" : "no_analyzed"
+				"index" : "not_analyzed"
 			},
 			"polling_freq" : {
 				"type" : "long"
