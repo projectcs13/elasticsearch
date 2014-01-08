@@ -19,7 +19,11 @@
 			"streams" : {
 				"type" : "string",
 				"index" : "analyzed"
-                		}
+                		},
+                	"vstreams" : {
+				"type" : "string",
+				"index" : "analyzed"
+                		},
 		}
 	}
 }
