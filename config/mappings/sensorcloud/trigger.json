@@ -23,7 +23,7 @@
                 	"vstreams" : {
 				"type" : "string",
 				"index" : "analyzed"
-                		},
+                		}
 		}
 	}
 }
