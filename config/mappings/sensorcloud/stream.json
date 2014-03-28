@@ -70,10 +70,6 @@
 				"type" : "date",
 				"index" : "no"
 			},
-			"history_size" : {
-				"type" : "long",
-				"index" : "no"
-			},
 			"location" : {
 				"type" : "geo_point",
 				"lat_lon" : true
